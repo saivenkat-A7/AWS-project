@@ -1,11 +1,17 @@
-const http = require('http');
+const express = require('express');
+const path = require('path');
 
-const PORT = 3000;
+const app = express();
+const PORT = 80;
 
-const server = http.createServer((req, res) => {
-  res.end('Hello from AWS CodePipeline & CodeDeploy 🚀');
+// Serve static files (like CSS)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route for landing page
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`🚀 Server running at http://localhost:${PORT}`);
 });

@@ -8,5 +8,17 @@
   },
   "author": "AWS Learner",
   "license": "MIT",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saivenkat-A7/AWS-project.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/saivenkat-A7/AWS-project/issues"
+  },
+  "homepage": "https://github.com/saivenkat-A7/AWS-project#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
