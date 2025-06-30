@@ -16,6 +16,10 @@ body {
   border-radius: 12px;
 
 }
+.p1{
+  color:green;
+  font-size:40px;
+}
 
 button {
   padding: 10px 20px;
